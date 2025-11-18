@@ -1,0 +1,35 @@
+\begin{filecontents*}[overwrite]{\jobname.xmpdata}
+\Title{TODO add title}
+\Author{TODO add author}
+\Language{it} % Inserire 'en' se la tesi è in lingua inglese
+\Subject{TODO add sentece that describe your thesis}
+\Keywords{TODO Keyword 1\sep TODO Keyword 2 \sep TODO Keyword 2}
+\end{filecontents*}
+
+\documentclass[a4paper,12pt,twoside,openright]{book}
+\usepackage{config/packages}
+
+\begin{document}
+\renewcommand{\abstractname}{Abstract}
+
+\frontmatter
+\include{00_frontespizio}
+\include{01_dedica}
+\include{02_abstract}
+
+\tableofcontents
+\printglossaries
+
+\mainmatter
+\include{01_introduzione}
+\include{02_background_e_stato_dell_arte}
+\include{03_metodologia}
+\include{04_risultati}
+\include{05_conclusioni}
+
+\backmatter
+\bibliographystyle{unsrt}
+\bibliography{bibliografia}
+
+\include{03_ringraziamenti}
+\end{document}

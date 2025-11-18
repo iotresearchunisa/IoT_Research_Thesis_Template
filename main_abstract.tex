@@ -1,0 +1,18 @@
+\begin{filecontents*}[overwrite]{\jobname.xmpdata}
+\Title{TODO add title - Abstract} % Titolo tesi - Abstract
+\Author{TODO add author}
+\Language{it} % Inserire en se la tesi è in lingua inglese
+\Subject{TODO add sentece that describe your thesis}
+\Keywords{TODO Keyword 1\sep TODO Keyword 2 \sep TODO Keyword 2}
+\end{filecontents*}
+
+\documentclass[a4paper,12pt,oneside,openany]{book}
+\usepackage{config/packages}
+
+\begin{document}
+\thispagestyle{empty}
+\renewcommand{\abstractname}{Abstract}
+
+\include{generale/02_abstract}
+
+\end{document}

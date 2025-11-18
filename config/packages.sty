@@ -1,0 +1,87 @@
+% --- Margini
+\usepackage[a4paper,top=3cm,bottom=3cm,left=3.5cm,right=3.5cm]{geometry}
+
+% --- Codifica e lingua
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,italian]{babel} % italiano attivo (ultimo)
+
+% --- Font
+\usepackage{mathpazo}
+\usepackage[scaled=.95]{helvet}
+\usepackage{courier}
+
+% --- INTERLINEA E SPAZIATURA
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{microtype}
+\frenchspacing
+
+
+% --- Colori, grafica
+\usepackage[export]{adjustbox}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\graphicspath{{figure/}, {config/template_figures/}}
+\usepackage{tikz}
+\usetikzlibrary{arrows,backgrounds}
+
+% --- Matematica
+\usepackage[reqno]{amsmath}
+\usepackage{amsfonts,amssymb,amsthm,mathtools}
+\numberwithin{equation}{section}
+
+% --- NUMERI, UNITÀ E SIMBOLI
+\usepackage{siunitx}
+\sisetup{locale=IT, per-mode=symbol}
+\usepackage{textcomp}
+
+% --- LISTE, TABELLE, FIGURE
+\usepackage{enumerate}
+\usepackage{wrapfig}
+\usepackage{array,booktabs,multirow,tabularx}
+\usepackage{colortbl}
+\usepackage[font=small,format=hang,labelfont={sf,bf}]{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+% --- Riferimenti/testo
+\usepackage{varioref}
+\usepackage{indentfirst}
+\usepackage{microtype}
+\frenchspacing
+
+% --- Icone
+\usepackage{fontawesome}
+
+% -- Se devi aggiungere qualcosa fallo qui:
+
+
+% -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+% --- Hyperref
+\usepackage[colorlinks=true,allcolors=black,hyperindex,pagebackref]{hyperref}
+
+% --- Glossari/acronimi
+\usepackage{glossaries}
+\makeglossaries
+\loadglsentries{acronimi}
+
+\usepackage{indentfirst}
+
+
+\renewcommand{\thechapter}{\Roman{chapter}}
+
+% --- Abstract
+\newenvironment{abstract} %
+{\null \vfill \begin{center} \bfseries \abstractname \end{center}} {\vfill\null}
+
+% --- Generazione PDF/A2
+\usepackage[a-2b,mathxmp]{pdfx}[2018/12/22]
+\hypersetup{pdfstartview=}
+
+
+\makeatletter
+\def\input@path{{capitoli/}{generale/}}
+\makeatother
+
